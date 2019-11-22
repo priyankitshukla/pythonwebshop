@@ -17,3 +17,5 @@
 # Step 2-  create  a file in the folder with name urls.py to map the endpoints.
 # Step 3 - add an entry for path in urls.py import path from django.urls
 # Step 4-  connect it with base project make an additional entry in urls.py
+# Step 5- to access current exercise http://localhost:8000/products
+# Step 6 - home page will disappear after this.
