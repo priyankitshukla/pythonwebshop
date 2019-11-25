@@ -1,3 +1,4 @@
+```python
 # Install Django using terminal
 
 # pip install django==2.1.5
@@ -63,7 +64,6 @@ Step 3- Create a folder named as templates make sure name is same
 Step 4- Create a basic file index.html inside the templates
 
 Step 5- now send the object from the view from the render method like
-```python
  products=Product.objects.all()
      return render(request, 'index.html'
                    ,{'products':products})
@@ -83,7 +83,7 @@ Step 3- Inside body section create a django template tag with block and name it 
 Step 4- import base file in index.html
 
  like -
- ```python
+
  {% extends 'base.html' %}
 {% block content%}
     <h1>Products</h1>
