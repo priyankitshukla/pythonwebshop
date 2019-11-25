@@ -68,3 +68,30 @@ Step 5- now send the object from the view from the render method like
      return render(request, 'index.html'
                    ,{'products':products})
 
+
+Install bootstrap
+
+Step 1- create a file name base.html
+
+Step 2- go to https://getbootstrap.com/docs/4.3/getting-started/introduction/ and copy the code for base tempate
+
+Step 3- Inside body section create a django template tag with block and name it as content
+            like
+             {%  block content %}
+                {%  endblock %}
+
+Step 4- import base file in index.html
+
+ like -
+ {% extends 'base.html' %}
+{% block content%}
+    <h1>Products</h1>
+    <ul>
+        {% for product in products %}
+             <li>{{product.name}} ({{ product.price}})</li>
+        {% endfor %}
+
+    </ul>
+
+{% endblock %}
+
