@@ -63,7 +63,7 @@ Step 3- Create a folder named as templates make sure name is same
 Step 4- Create a basic file index.html inside the templates
 
 Step 5- now send the object from the view from the render method like
-
+```python
  products=Product.objects.all()
      return render(request, 'index.html'
                    ,{'products':products})
@@ -96,4 +96,4 @@ Step 4- import base file in index.html
 
 {% endblock %}
 
-```python
+
