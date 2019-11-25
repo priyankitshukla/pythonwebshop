@@ -83,6 +83,7 @@ Step 3- Inside body section create a django template tag with block and name it 
 Step 4- import base file in index.html
 
  like -
+ <code>
  {% extends 'base.html' %}
 {% block content%}
     <h1>Products</h1>
@@ -95,3 +96,4 @@ Step 4- import base file in index.html
 
 {% endblock %}
 
+ </code>
