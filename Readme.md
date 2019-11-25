@@ -49,3 +49,22 @@
 #
 #
 
+<!-- {% %} is statndard django tempate -->
+<!-- use double curly braces to render content dynamically -->
+
+# To show products in public domain ie- out of admin module
+
+Step 1- go to views and import the products
+
+Step 2- inside the def call Product.object.all() to get all records we can use filter and other inbuilt methods to it.products
+
+Step 3- Create a folder named as templates make sure name is same
+
+Step 4- Create a basic file index.html inside the templates
+
+Step 5- now send the object from the view from the render method like
+
+ products=Product.objects.all()
+     return render(request, 'index.html'
+                   ,{'products':products})
+
